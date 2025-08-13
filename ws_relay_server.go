@@ -6,6 +6,7 @@ import (
 	"flag"
 	"log"
 	"net/http"
+	"os"
 	"sync"
 
 	"github.com/gorilla/websocket"
