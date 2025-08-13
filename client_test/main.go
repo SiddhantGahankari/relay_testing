@@ -33,7 +33,7 @@ func generatePeerID() (peer.ID, string) {
 }
 
 func main() {
-	relayURL := "ws://localhost:8080/ws"
+	relayURL := "ws://0.0.0.0:8080/ws"
 
 	_, peerAID := generatePeerID()
 	_, peerBID := generatePeerID()
