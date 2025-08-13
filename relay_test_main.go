@@ -7,7 +7,7 @@ import (
 	"log"
 	"time"
 
-	"relay/helper" 
+	"relay/helper"
 
 	"github.com/libp2p/go-libp2p/core/crypto"
 	"github.com/libp2p/go-libp2p/core/peer"
@@ -33,7 +33,9 @@ func generatePeerID() (peer.ID, string) {
 }
 
 func main() {
-	relayURL := "ws://localhost:8080/ws"
+	// Replace with your actual Render Web Service URL
+	relayBaseURL := "wss://relay-testing.onrender.com"
+	relayURL := relayBaseURL + "/ws"
 
 	_, peerAID := generatePeerID()
 	_, peerBID := generatePeerID()
